@@ -1,0 +1,49 @@
+@charset "UTF8";
+.arc-list {
+	margin: 0 auto;
+	width: 676px;
+	padding: 14px 50px;
+}
+.arc-list dl {
+	border-bottom: 1px dotted #ccc;
+}
+.arc-list dt {
+	float: left;
+	width: 153px;
+	height: 153px;
+	padding: 24px;
+}
+.arc-list img {
+	border: 1px solid #777;
+}
+.arc-list dd {
+	float: right;
+	width: 465px;
+	height: 150px;
+	padding: 25px 0px;
+}
+.arc-list h2 {
+	margin-bottom: 22px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+.arc-list div {
+	margin-bottom: 16px;
+}
+.arc-list span {
+	margin-right: 54px;
+	color: #777;
+}
+.arc-list p {
+	height: 100px;
+	line-height: 24px;
+	color: #777;
+	border: 1px solid #ccc;
+}
+.clearfix:after {
+	content: "\200B";
+	display: block;
+	height: 0;
+	clear: both;
+}

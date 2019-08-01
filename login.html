@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<style type="text/css">
+		.wrap {
+			width: 300px;
+			/*height: 100px;*/
+			margin: 150px auto;
+			padding: 12px;
+			border: 1px solid #933;
+		}
+		.user, .pass, .button {
+			position: relative;
+			height: 46px;
+			padding-left: 48px;
+			border: 1px solid #d9d9d9;
+			border-radius: 3px;
+		}
+		.button {
+			padding: 0;
+			border: none;
+		}
+		.user {
+			margin-bottom: 8px;
+			background: url('..image/user.png') 0 0 no-repeat;
+		}
+		.pass {
+			margin-bottom: 8px;
+			background: url('..image/pass.png') 0 0 no-repeat;
+		}
+		.wrap label, .wrap input {
+			position: absolute;
+			top: 0;
+			left: 48px;
+		}
+		.wrap label {
+			z-index: 1;
+			width: 250px;
+			height: 46px;
+			line-height: 46px;
+			color: #aaa;
+			cursor: text;
+		}
+		.wrap input {
+			width: 250px;
+			height: 100%;
+			border: none;
+			background: transparent;
+			line-height: 46px;
+			outline: none;
+			font-size: 18px;
+			/*border: 1px solid black;*/
+		}
+		.button button {
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<form class="wrap" action="">
+		<legend >
+		<div class="user">
+			<label id="userlabel" for="username">请输入用户名</label>
+			<input type="text" name="username" id="username">
+		</div>
+		<div class="pass">
+			<label id="passlabel" for="password">请输入密码</label>
+			<input type="password" name="password" id="password">
+		</div>
+		<div class="button">
+			<button>提交</button>
+		</div>
+		</legend>
+	</form>
+	<script type="text/javascript">
+		var userText = document.getElementById('username');
+		var userLabel = document.getElementById('userlabel');
+		var passText = document.getElementById('password');
+		var passLabel = document.getElementById('passlabel');
+		userText.onkeyup = function() {
+			changeLabel(this, userLabel);
+			
+		}
+		passText.onkeyup = function() {
+			changeLabel(this, passLabel);
+		}
+		function changeLabel(valEle, labelEle) {
+			var val = valEle.value.split(" ").join("");
+			
+			if (val == "") {
+				labelEle.style.display = "block";
+				valEle.value = "";
+			}  else {
+				labelEle.style.display = "none";
+				// console.log(valEle.value.split(" ").join(""))
+			}
+		}
+	</script>
+</body>
+</html>

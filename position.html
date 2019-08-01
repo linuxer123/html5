@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="style/reset.css">
+	<style>
+		.wrap {
+			position: relative;
+			margin: 50px auto;
+			border: 2px dotted black;
+			height: 200px;
+			/*overflow: hidden;*/
+		}
+		.box1 {
+			position: absolute;
+			/*top: 0px;*/
+			bottom: 10px;
+			right: 10px;
+			left: 10px;
+			width: 150px;
+			height: 150px;
+			/*margin: 20px;*/
+			/*padding: 40px;*/
+			border: 1px solid black;
+		}
+		.box2 {
+			position: absolute;
+			left: 10px;
+			right: -10px;
+
+			height1: 150px;
+			background: #39f;
+
+		}
+		.box3 {
+			/*position: absolute;*/
+			/*float: right;*/
+			width: 100px;
+			height: 100px;
+			background: #39f;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box1">设置relative的div元素</div>
+		<div class="box2">HTML5布局之路box2</div>
+		<div class="box3">HTML5布局之路box3</div>
+	</div>
+</body>
+</html>

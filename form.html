@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="style/reset.css">
+	<style>
+		.form-data p {
+			margin: 0 0 8px;
+
+		}
+		input {
+			outline: none;
+		}
+		textarea {
+			resize: none;
+		}
+	</style>
+</head>
+<body>
+	<form class="form-data" action="adduser.php" method="post" name="data" enctype="application/x-www-form-urlencoded;">
+		<p><input type="text" name="user" id="user" value="独行冰海">
+		</p>
+		<p>
+			<input type="password" name="pass" id="pass" value="123456789">
+		</p>
+		<p>
+			<input type="hidden" name="" id="" value="不显示在页面当中的隐线">
+		</p>
+		<p>
+			<span>单选框1:</span><input type="radio" name="" id="">
+	
+			<span>单选框2:</span><input type="radio" name="" id="">
+		</p>
+		<p>
+			<span>复选框1:</span><input type="checkbox" name="" id="">
+		
+			<span>复选框2:</span><input type="checkbox" name="" id="">
+		</p>
+		<p>
+			文件上传:<input type="file" name="" id="">
+		</p>
+		<p>
+			图像按钮:<input type="image" name="" id="" alt="图像加载错误时显示该值" value="无alt时显示该值" src="../imgaes/HTML5.jpg">
+		</p>
+		<p>
+			<input type="button" name="" id="" value="普通按钮">
+		</p>
+		<p>
+			<input type="reset" name="" id="" value="重置按钮">
+		</p>
+		<p>
+			<input type="submit" name="btn" id="btn" value="提交数据">
+		</p>
+		<p>
+			<span>选择职位:</span>
+			<select name="">
+				<option value="html5开发工程师">html5开发工程师</option>
+				<option value="html5开发工程师">html5开发工程师</option>
+				<option value="html5开发工程师">html5开发工程师</option>
+			</select>
+		</p>
+		<p>
+			<span>选择职位:</span>
+			<select name="selw" size=3 multiple>
+				<option value="html5开发工程师">html5开发工程师</option>
+				<option value="html5开发工程师">html5开发工程师</option>
+				<option value="html5开发工程师">html5开发工程师</option>
+			</select>
+		</p>
+		<p>
+			<span>选择职位:</span>
+			<select name="selw">
+				<optgroup label="网络职业">
+					<option value="html5开发工程师">html5开发工程师</option>
+					<option value="html5开发工程师">html5开发工程师</option>
+					<option value="html5开发工程师">html5开发工程师</option>
+				</optgroup>
+				<optgroup label="网络职业">
+					<option value="html5开发工程师">html5开发工程师</option>
+					<option value="html5开发工程师">html5开发工程师</option>
+					<option value="html5开发工程师">html5开发工程师</option>
+				</optgroup>
+			</select>
+		</p>
+		<textarea name="">sdfsdfsdfsdfd</textarea>
+	</form>
+</body>
+</html>
